@@ -1,0 +1,21 @@
+<div *ngIf="cartItems.length === 0" class="alert alert-primary">Cart is empty</div>
+
+<div class="card-cart">
+    <div class="cart-body">
+        <img class="shopping-cart-image" src="../../../../assets/images/cart.jpg" height="70px" width="70px">
+
+
+        <ul *ngIf="cartItems.length > 0" class="list-group">
+            <li class="list-group-item" *ngFor="let item of cartItems">
+                <app-cart-item [cartItem]="item"></app-cart-item>
+            </li>
+
+            <li class="list-group-item active">
+                <strong> Total = </strong>{{ cartTotal | currency}}</li>
+            <div class="empty-button" *ngFor="let equipment of cartItems">
+                <button (click)=" emptyCart(equipment)" type="button " class="btn btn-danger">Empty your cart</button>
+            </div>
+
+        </ul>
+    </div>
+</div>

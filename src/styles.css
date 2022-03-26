@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+.shopping-cart {
+    background-color: yellow;
+}
+
+.card-item {
+    font-size: small;
+}
+
+.filters {
+    font-size: smaller;
+}
+
+.list-group-item {
+    padding: 10px;
+}
+
+.storeHeader-image {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.equipment-btn {
+    font-size: small;
+}
+
+.list-group-item {
+    font-weight: 400;
+}
+
+.card-text {
+    font-size: small;
+}
+
+.btn-group-cart {
+    font-size: small;
+    justify-content: space-evenly;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    font-size: large;
+    font-weight: 500;
+}
+
+.empty-button {
+    margin-top: 5px;
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-group-item {
+    border-radius: 10px;
+    color: rgb(78, 39, 39);
+}

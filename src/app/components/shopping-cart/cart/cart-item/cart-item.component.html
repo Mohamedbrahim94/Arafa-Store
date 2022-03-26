@@ -1,0 +1,14 @@
+<div class="card-item">
+    <span> {{ cartItem.category }} </span> x <span> {{ cartItem.quantity }}</span> :
+    <strong>{{ ( cartItem.quantity * cartItem.price) | currency }}</strong>
+    <br>
+    <div class="btn-group-cart" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn-reduce  btn-primary">-</button>
+        <button type=" button " class="btn-add btn-success ">+</button>
+        <button type="button " class="btn-delete btn-danger ">X</button>
+
+    </div>
+
+
+
+</div>

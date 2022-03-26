@@ -1,0 +1,7 @@
+<div class="row">
+    <div class="row">
+        <div class="col-lg-4 row-cols-sm-2 col-md-4 " *ngFor="let equipment of equipmentsList">
+            <!-- Use a property binding [] to pass data from Equipments to every equipment item -->
+            <app-equipments-item [equipmentItem]="equipment"></app-equipments-item>
+        </div>
+    </div>
