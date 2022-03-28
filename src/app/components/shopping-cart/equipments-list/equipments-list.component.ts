@@ -13,6 +13,8 @@ export class EquipmentsListComponent implements OnInit {
   constructor(private equipmentService: EquipmentService) {}
 
   ngOnInit() {
-    this.equipmentsList = this.equipmentService.getEquipments();
+    this.equipmentService.getEquipments().subscribe((equipments) => {
+      this.equipmentsList = equipments;
+    });
   }
 }

@@ -20,7 +20,7 @@ export class Equipment {
     serialNumber = '',
     price = 0,
     quantity = 1,
-    imageUrl = 'https://th.bing.com/th/id/R.ee79f7140ee52206605212c9742c16b8?rik=gwUP34NNj7b7Dw&pid=ImgRaw&r=0'
+    imageUrl = ''
   ) {
     this.id = id;
     this.name = name;
